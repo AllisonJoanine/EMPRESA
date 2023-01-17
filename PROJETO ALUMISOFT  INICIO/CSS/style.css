@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	overflow-y:hidden;
+}
+.center{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+/*
+.header{
+	width: 100%;
+	height: 90px;
+	background-color: #212343;
+}
+*/
+
+
+.container-banner{
+	width: 100%;
+	height: 800px;
+	background-image:url('../imagens/azul.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.container-banner > .center{
+	height: 100%;
+	padding: 80px;
+}
+
+.form{
+	padding: 10px;
+	margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.form h2{
+	font-weight: normal;
+	color: #999999;
+	font-size: 31px;
+	color: #288BA8;
+}
+
+.input-container{
+	margin-top: 20px;
+}
+
+.input-container span{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+}
+
+.form p{
+	display: inline-block;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	margin: 20px 0;
+}
+
+.input-container input[type=text]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+}
+
+.input-container input[type=password]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	border: 1px solid #ccc;
+}
+
+.fomr .input-submit-container{
+	
+	text-align: center;
+
+}
+
+.form input[type=submit]{
+	color: white;
+	font-size: 25px;
+	width: 344px;
+	height: 55px;
+	display: inline-block;
+	background-color: #288BA8;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 5px;
+}
+
+.form input[type=submit]:hover{
+	background-color: #4169E1;
+}
