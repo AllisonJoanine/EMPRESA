@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #DCDCDC;
+}
+
+
+html, body{height: 100%;}
+
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.sidebar{
+	padding:0 35px;
+	width: 25%;
+	background-color: white;
+	height: 800px;
+}
+
+.sidebar h4{
+	color: #4682B4;
+	font-size: 20px;
+
+}
+.sidebar h5{
+	color: #4682B4;
+	font-size: 16px;
+
+}
+
+.sidebar a{
+	display: block;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-top: 10px;
+	color: #4682B4;
+}
+
+.sidebar a:hover{
+	border-left: 4px solid #73b4ff;
+	background-color: rgb(245,245,245);
+	font-weight: bold;
+}
+.sidebar a:hover .sidebar a > svg{
+	color: #4682B4;
+}
+
+.content{
+	width: 80%;
+	background-color: rgb(245, 245, 245);
+}
+
+.Filtro{
+	position-top: 80px;
+}
+
+.container-banner > .center{
+	height: 100%;
+	/*text-align: right*/
+}
+
+.form{
+	width: 400px;
+	height: 400px;
+	float: right;
+	background-color: blue;
+}
+
+#tabela{
+	position-top: 80px;
+}
+
+h2{
+	color: #288BA8;
+}
