@@ -6,6 +6,9 @@
 	background-color: #DCDCDC;
 }
 
+html{
+	overflow-y:hidden;
+}
 
 html, body{height: 100%;}
 
@@ -17,9 +20,17 @@ html, body{height: 100%;}
 
 .sidebar{
 	padding:0 35px;
-	width: 25%;
+	width: 20%;
 	background-color: white;
-	height: 800px;
+	height: 200%;
+	border-right: 10px solid #4682B4;
+}
+
+
+.sidebar>h2{
+	position:relative;
+	left: -20px;
+	background-color: white;
 }
 
 .sidebar h4{
@@ -64,17 +75,97 @@ html, body{height: 100%;}
 	/*text-align: right*/
 }
 
-.form{
-	width: 400px;
-	height: 400px;
-	float: right;
-	background-color: blue;
-}
+
 
 #tabela{
-	position-top: 80px;
+	position: relative;
+	margin-top: 80px;
+
 }
 
 h2{
 	color: #288BA8;
 }
+
+.tabela{
+	width: 1000px;
+	height: 500px;
+	background-color: white;
+	position: relative;
+	right: -350px;
+	border: 1px solid black;
+	top:-550px;
+	/*text-align: right*/
+	border-radius: 5px;
+}
+
+.tabela>table{
+	width: 850px;
+	margin-left: 75px;
+	margin-top: 15px;
+	text-decoration: none;
+	border-spacing: 15px;
+	
+}
+
+.header{
+	border-bottom: 3px solid #288BA8;
+
+	width: 1050px;
+	height: 100px;
+	position: relative;
+	right: -335px;
+	top: -1257px;
+}
+
+.header>a{
+	display: block;
+	text-decoration: none;
+}
+
+.header input[type=submit]{
+	color: white;
+	font-size: 20px;
+	width: 344px;
+	height: 55px;
+	display: inline-block;
+	background-color: #4682B4;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 5px;
+	position: relative;
+	left: 500px;
+}
+
+.filtro{
+	width: 1020px;
+	height: 75px;
+	position: relative;
+	left: 350px;
+	top: -1250px;
+}
+
+.filtro input[type=text]{
+	margin-top: 8px;
+	width: 250px;
+	height: 35px;
+	border: 1px solid #1C1C1C;
+	background-color: #708090;
+	position: relative;
+	left: 750px;
+	top: 15px;
+	border-radius: 3px;
+
+}
+
+
+.filtro > .filtro2{
+	width: 500px;
+	color: gray;
+	font-size: 15px;
+	position: relative;
+	top: -12px;
+}
+
