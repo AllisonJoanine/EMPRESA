@@ -1,187 +1,112 @@
-*{ 	margin: 0; 
-	padding: 0; 
-    background-color: rgb(240, 240, 240);
-    font-family:Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-}
-body{
-	width: 100%;
-	height: 100%;
-}
-.all-tudo{
-	font-family:Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+*{
+	font-family: Arial Black;
+	background-color: #f7f7f7;
 }
 
-*{
+
+/*ESPAÇO*/
+
+.menu-container {
+	position: relative;
+	margin: 10;
+	padding: 0;
+	width: 60px;
+	height: 100vh;
+	background-color: #ffffff;
+	
+  }
+  
+  .toggle {
+	position: absolute;
+	top: 80%;
+	left: 100%;
+	margin-top: -22px;
+	margin-left: 15px;
+	cursor: pointer;
+	z-index: 1;
+	width: 60px;
+	height: 44px;
+	background-color: rgba(5, 79, 119, 0.5);
+	border-radius: 5px;
+  }
+  
+  .menu {
+	position: absolute;
+	top: 0;
+	left: -60px;
+	width: 200px;
+	height: 100%;
+	padding: 50px 0;
+	background-color: #ffffff;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul {
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-html{
-	overflow-y:hidden;
-}
-
-html, body{height: 100%;}
-
-.main{
-	display: flex;
-	flex-wrap: wrap;
-	height: 100%;
-}
-
-.sidebar{
-	padding:0 35px;
-	width: 20%;
-	background-color: white;
-	height: 200%;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-.sidebar>h2{
-	position:relative;
-	left: -20px;
-	background-color: white;
-}
-
-.sidebar h4{
-	color: #4682B4;
-	font-size: 20px;
-
-}
-.sidebar h5{
-	color: #4682B4;
-	font-size: 16px;
-
-}
-
-.sidebar a{
+  }
+  
+  .menu li {
+	margin: 0;
+  }
+  
+  .menu a {
 	display: block;
+	padding: 20px;
+	color: #2b7199;
 	text-decoration: none;
-	margin-left: 15px;
-	margin-top: 10px;
-	color: #4682B4;
-}
-
-.sidebar a:hover{
-	border-left: 4px solid #73b4ff;
-	background-color: rgb(245,245,245);
-	font-weight: bold;
-}
-.sidebar a:hover .sidebar a > svg{
-	color: #4682B4;
-}
-
-.content{
-	width: 80%;
-	background-color: rgb(245, 245, 245);
-}
-
-.Filtro{
-	position-top: 80px;
-}
-
-.container-banner > .center{
-	height: 100%;
-	/*text-align: right*/
-}
-
-
-
-#tabela{
-	position: relative;
-	margin-top: 80px;
-
-}
-
-h2{
-	color: #288BA8;
-}
-
-.tabela{
-	width: 1000px;
-	height: 500px;
-	background-color: white;
-	position: relative;
-	right: -350px;
-	border: 1px solid black;
-	top:-550px;
-	/*text-align: right*/
-	border-radius: 5px;
-}
-
-.tabela>table{
-	width: 850px;
-	margin-left: 75px;
-	margin-top: 15px;
-	text-decoration: none;
-	border-spacing: 15px;
-	
-}
-
-.header{
-	border-bottom: 3px solid #288BA8;
-
-	width: 1050px;
-	height: 100px;
-	position: relative;
-	right: -335px;
-	top: -1257px;
-}
-
-.header>a{
-	display: block;
-	text-decoration: none;
-}
-
-.header input[type=submit]{
-	color: white;
-	font-size: 20px;
-	width: 344px;
-	height: 55px;
-	display: inline-block;
-	background-color: #4682B4;
-	border-top: 0;
-	border-right: 0;
-	border-left: 0;
-	cursor: pointer;
-	border-bottom: 5px;
-	position: relative;
-	left: 500px;
-}
-
-.filtro{
-	width: 1020px;
-	height: 75px;
-	position: relative;
-	left: 350px;
-	top: -1250px;
-}
-
-.filtro input[type=text]{
-	margin-top: 8px;
-	width: 250px;
-	height: 35px;
-	border: 1px solid #1C1C1C;
-	background-color: #708090;
-	position: relative;
-	left: 750px;
-	top: 15px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+  
+  .menu a:hover {
 	border-radius: 3px;
+	background-color: #a3a3a3;
+  }
+  
+  input[type="checkbox"]#toggle:checked ~ .menu {
+	left: 0;
+  }
 
-}
+  /*sub*/
 
+  .custom-select {
+	width: 200px;
+	padding: 10px;
+	font-size: 16px;
+	border: 0 solid transparent;
+	border-radius: 0px;
+  }
+  
+  .custom-select option {
+	padding: 10px;
+  }
 
-.filtro > .filtro2{
-	width: 500px;
-	color: gray;
-	font-size: 15px;
-	position: relative;
-	top: -12px;
-}
+  select option:checked::before {
+	content: "✓";
+	color: #fff;
+	background-color: #333;
+	margin-right: 10px;
+  }
 
-.minhaDiv{
-	position: relative;
-	left: 500px;
+  /*icone*/
+
+  ul li {
+	list-style-type: none;
+	position: relative; 
+	padding-left: 30px;
+  }
+
+  ul li .icone {
+	position: absolute;
+	left: 0; 
+	top: 20px; 
+	width: 20px; 
+	height: 20px; 
+	background-image: url("icone.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
 }
