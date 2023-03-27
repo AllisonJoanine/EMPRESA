@@ -1,6 +1,7 @@
 *{
-	font-family: Arial Black;
+	/*font-family: Arial Black;*/
 	background-color: #f7f7f7;
+
 }
 
 
@@ -15,26 +16,35 @@
 	background-color: #ffffff;
 	
   }
-  
+    .toggle > img{
+  	position: relative;
+  	top: 25%;
+  	left: 70%;
+  	width: 43%;
+
+  }
+
   .toggle {
 	position: absolute;
-	top: 80%;
-	left: 100%;
+	top: 5%;
+	left: 133%;
 	margin-top: -22px;
 	margin-left: 15px;
 	cursor: pointer;
 	z-index: 1;
 	width: 60px;
-	height: 44px;
-	background-color: rgba(5, 79, 119, 0.5);
+	height: 0;
+	background-color: #80c8e0;
 	border-radius: 5px;
   }
+
+
   
   .menu {
 	position: absolute;
 	top: 0;
 	left: -60px;
-	width: 200px;
+	width: 220px;
 	height: 100%;
 	padding: 50px 0;
 	background-color: #ffffff;
@@ -44,7 +54,10 @@
   }
   
   .menu ul {
+  	font-family: Arial Black;
 	list-style: none;
+	position: relative;
+	top: 45px;
 	margin: 0;
 	padding: 0;
   }
@@ -55,7 +68,20 @@
   
   .menu a {
 	display: block;
-	padding: 20px;
+	padding: 8px;
+	color: #2b7199;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+  }
+
+  .roma p {
+position: absolute;
+top: -200px;
+font-family: bold;
+weight: bold;
+	display: block;
+	padding: -20px;
 	color: #2b7199;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-out;
@@ -63,8 +89,11 @@
   }
   
   .menu a:hover {
-	border-radius: 3px;
-	background-color: #a3a3a3;
+  	position: relative;
+  	width: 110%;
+  	left: -15px;
+	border-radius: 2px;
+	background-color: #80c8e0;
   }
   
   input[type="checkbox"]#toggle:checked ~ .menu {
@@ -97,16 +126,185 @@
   ul li {
 	list-style-type: none;
 	position: relative; 
-	padding-left: 30px;
+	padding-left: 32px;
   }
 
-  ul li .icone {
+  ul li .icone1 {
 	position: absolute;
-	left: 0; 
-	top: 20px; 
-	width: 20px; 
-	height: 20px; 
-	background-image: url("icone.png"); 
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone6.png"); 
 	background-repeat: no-repeat; 
 	background-position: center; 
+
+}
+
+ul li .icone2 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone7.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+ul li .icone3 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone8.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+
+ul li .icone4 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone9.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+
+ul li .icone5 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone10.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+ul li .icone6 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone11.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+
+ul li .icone7 {
+	position: absolute;
+	left: -5%; 
+	top: 13%; 
+	width: 20%; 
+	height: 80%; 
+	background-image: url("icone12.png"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+
+}
+
+ul li .icone0 {
+	position: absolute;
+	left: -5%;
+	/*top: 13%; */
+	width: 100%; 
+	height: 80%; 
+	background-image: url("icone18.png"); 
+	background-repeat: no-repeat; 
+
+}
+
+ul li .icone8 {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	width: 10%; 
+	height: 80%; 
+	background-image: url("icone19.png"); 
+	background-repeat: no-repeat; 
+
+}
+
+ul li .icone9 {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	width: 10%; 
+	height: 80%; 
+	background-image: url("icone20.png"); 
+	background-repeat: no-repeat; 
+
+}
+
+ul li .icone10 {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	width: 10%; 
+
+	height: 80%; 
+	background-image: url("icone21.png"); 
+	background-repeat: no-repeat; 
+
+}
+
+.nada{
+	position: absolute;
+	font-family: unset;
+	left: 40px;
+	font-size: 15px;
+	color: rgb(43, 113, 153);
+}
+.nada .ic{
+	position: absolute;
+	background-image: url("icone15.png");
+	width: 33%;
+	top: -15%;
+	left: -45px;
+	height: 50px;
+	background-repeat: no-repeat
+}
+
+
+
+
+#texto {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+#texto:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.cemweb  {
+	position: relative;
+	top: 9%;
+	left: 0%;
+
+}
+
+
+
+/////////
+/*
+.roma5{
+	position: absolute;
+	top: -50%;
+}
+*/
+
+.Dash{
+	position: relative;
+	left: 50px;
+	width: 100px;
+height: 100px;
+	background-color: blue;
 }

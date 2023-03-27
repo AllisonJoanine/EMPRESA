@@ -1,5 +1,5 @@
 .all-tudo{
-	font-family:Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 
 .box > .icone{
@@ -28,7 +28,8 @@
 	top: -15px;
 	text-align: center;
 	color:#054F77;
-	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	/*font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;*/
+	font-weight: bold
 }
 
 .box > h1{
@@ -36,8 +37,10 @@
 	top: -8px;
 	text-align: center;
 	color:#054F77;
-	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	/*font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;*/
 	font-size: 35px;
+	font-weight: bold;
+	font-weight: 700px;
 }
 
 
@@ -81,8 +84,11 @@ input[type=submit] {
     border-color: #006699;
     border-radius: 5px;
     font-size: 20px;
+    transition: 0s;
 
 }
+
+
 input[type=text] {
 
     border-radius: 1px;
@@ -94,7 +100,7 @@ input[type=text] {
     background: #DCDCDC;
     border: 1px solid #DCDCDC;
     width: 300px;
-    height: 40px;
+    height: 35px;
 }
 input[type=password] {
     border-radius: 1px;
@@ -106,7 +112,7 @@ input[type=password] {
     background:#DCDCDC;
     border: 1px solid #DCDCDC;
     width: 300px;
-    height: 40px;
+    height: 35px;
 }
 
 .recpassword{

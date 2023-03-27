@@ -10,3 +10,10 @@
 document.getElementById("button").addEventListener("click", function() {
   window.location.href = "../SITE/HOME/home.html";
 });
+
+
+var input[type=submit],
+
+input[type=submit]:focus{
+  background: red
+}
