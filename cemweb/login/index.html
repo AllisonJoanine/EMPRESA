@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>CemWeb Login</title>
+        <link href="./CSS/style.css" type="text/css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <div class="background-imagem-esquadria">
+
+        </div><!--background-imagem-esquadria-->
+       
+        <div class="background-box-transparente">
+            <div class="formulario">
+                <form>
+                    <img class="Icone-cemweb" src="../login/imagens/icones/janelas.png" alt="ícone de usuário">
+                    <p class="cemweb-texto">
+                        <div class="CEM-p"><p>CEM</p></div><!--CEM-p--><br />
+                        <div class="WEB-p"><p>WEB</p></div><!--WEB-p-->
+                    </p><!--cemweb-texto-->
+                    
+                    <br />
+                    <input type="text" id="usuário" name="login" placeholder="Usuário" onfocus="limparValor()">
+                    <br>
+                    <form method="post">
+                        <input type="password" id="senha" name="senha" placeholder="Senha">
+                    </form>
+                    <br>
+                    <button class="button-enviar" type="submit">Enviar</button>
+                    
+                  </form>        
+            </div><!--formulario-->
+        </div><!--background-box-transparente-->
+
+        <script type="text/javascript" src="./JavaScript/funcao.js"></script>
+    </body>    
+</html>

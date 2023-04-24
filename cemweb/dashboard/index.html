@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">            
+        <link href="./CSS/designer.css" type="text/css" rel="stylesheet" />
+        <title>CemWeb Login</title>  
+          
+       
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.css" />
+ 
+    </head>
+
+    <body>
+      <div class="linha-separção">
+      <div class="calculator">
+        <input type="text" class="display" readonly>
+        <button class="button" value="7">7</button>
+        <button class="button" value="8">8</button>
+        <button class="button" value="9">9</button>
+        <button class="button operator" value="+">+</button>
+        <button class="button" value="4">4</button>
+        <button class="button" value="5">5</button>
+        <button class="button" value="6">6</button>
+        <button class="button operator" value="-">-</button>
+        <button class="button" value="1">1</button>
+        <button class="button" value="2">2</button>
+        <button class="button" value="3">3</button>
+        <button class="button operator" value="*">*</button>
+        <button class="button" value="0">0</button>
+        <button class="button" value=".">.</button>
+        <button class="button operator" value="/">/</button>
+        <button class="button clear" value="C">C</button>
+        <button class="button calculate" value="=">=</button>
+      </div>
+
+      
+
+      </div>
+      <canvas id="myChart"></canvas>
+
+      <canvas id="myChart2"></canvas>
+
+      
+
+      <div class="sidebar">
+      <div class="navigation">
+        <ul>
+          <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                <span class="title">Ola Juliano</span>
+              </a>
+            </li><!--list-->
+          
+
+            <li class="list">
+                <a href="#">
+                  <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+                  <span class="title">Dashboard</span>
+                </a>
+            </li><!--list-->
+            <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+                <span class="title">Cadastro</span>
+            
+              </a>
+             </li><!--list-->
+            <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="pencil-outline"></ion-icon></span>
+              <span class="title">Projetos</span>
+            </a>
+            </li><!--list-->
+            <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                <span class="title">Desenhos/croquis</span>
+             
+              </a>
+            </li><!--list-->
+            </ul>
+      </div><!--navigation-->
+    </div><!--sidebar-->
+
+  
+
+
+        <script type="text/javascript" src="./js/funcao.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+   var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Calculo errado', 'incorreto', 'preenchido', 'assinalado'],
+          datasets: [{
+            data: [12, 19, 3, 5],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.8)',
+              'rgba(75, 192, 192, 0.8)',
+              'rgba(54, 162, 235, 0.8)',
+              'rgba(255, 206, 86, 0.8)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: 'bottom'
+          }
+        }
+      });
+
+//////////////
+
+var ctx = document.getElementById('myChart2').getContext('2d');
+      var myChart2 = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+          datasets: [{
+            label: 'Vendas',
+            data: [12, 19, 3, 5, 2, 3, 7],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
+       
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+
+      
+</script>
+</body>    
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-image: url(../imagens/cem-cadastro.jpg);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{position: absolute;
+  margin: 0;
+  height: 100% ;
+  background-color: white;
+  
+}
+
+.navigation{
+  position: relative;
+  height: 100%;
+  width: 70px;
+  background: white;
+  box-shadow: 5px 0 0 #4682B4;
+  border-left: 10px solid white;
+  overflow-x: hidden;
+  transition: 1.0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navigation:hover{
+  width:300px;
+  height: 100%;
+}
+
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+  
+}
+
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #4682B4;
+}
+.navigation ul li a:hover{
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: #4682B4;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.navigation ul li a .icon ion-ion{
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 1;
+  width: 50px;
+  padding: 50px;
+  height: 50px;
+}
+
+.navigation ul li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+
+}
+
+
+.info-usuário img{
+  width: 15%;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.info-usuário p{
+  display: inline-block;
+  position: relative;
+  top: -9px;
+  left: 3%;
+  font-size: 15px;
+  color: #0d6efd;
+  
+}
+
+
+
+.links-box{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 15%;
+    background-color: #4682B4;
+    height: 12%;
+    width: 23%;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.links-box:hover{
+    transform: scale(1.1);
+    background-color: #3a6c94;
+}
+.links-box1{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 45%;
+    background-color: #4682B4;
+    height: 12%;
+    width: 23%;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.links-box1:hover{
+    transform: scale(1.1);
+    background-color: #3a6c94;
+}
+.links-box2{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 75%;
+    background-color: #4682B4;
+    height: 12%;
+    width: 23%;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.links-box2:hover{
+    transform: scale(1.1);
+    background-color: #3a6c94;
+}
+
+
+
+
+/**/

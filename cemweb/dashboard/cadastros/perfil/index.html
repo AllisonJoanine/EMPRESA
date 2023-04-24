@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <link href="./designer.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+<div class="botão-perso">
+      <button onclick="openDiv()">Abrir Div</button>
+    </div>
+<div id="minhaDiv">
+  <button onclick="closeDiv()" padding="50px">X</button>
+  
+  <form class="cadastro-perfis">
+    <label for="nome" placeholder="Usuário">Código:</label>
+    <input type="text" id="nome">
+    <label for="nome">Tipo:</label>
+    <input type="text" id="nome">
+    <label for="nome">Descrição</label>
+    <input type="text" id="nome">
+  </form>
+  
+</div>
+
+<div id="resultado"></div>
+
+        <div class="sidebar">
+            <div class="navigation">
+              <ul>
+                <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                      <span class="title">Ola Juliano</span>
+                    </a>
+                  </li><!--list-->
+                
+        
+                  <li class="list">
+                      <a href="#">
+                        <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                      </a>
+                  </li><!--list-->
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+                      <span class="title">Cadastro</span>
+                  
+                    </a>
+                   </li><!--list-->
+                  <li class="list">
+                  <a href="#">
+                    <span class="icon"><ion-icon name="pencil-outline"></ion-icon></span>
+                    <span class="title">Projetos</span>
+                  </a>
+                  </li><!--list-->
+                  <li class="list">
+                    <a href="#">
+                      <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
+                      <span class="title">Desenhos/croquis</span>
+                   
+                    </a>
+                  </li><!--list-->
+                  </ul>
+        
+                  
+            </div><!--navigation-->
+          </div><!--sidebar-->
+
+
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+          <script>
+            function openDiv() {
+  // Exibe a div
+  document.getElementById("minhaDiv").style.display = "block";
+}
+
+function closeDiv() {
+  // Esconde a div
+  document.getElementById("minhaDiv").style.display = "none";
+}
+
+/////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Seleciona o formulário
+  var form = document.querySelector("form");
+
+  // Adiciona um evento para capturar o pressionamento da tecla Enter
+  form.addEventListener("keypress", function(event) {
+    if (event.keyCode === 13) {
+      // Impede o comportamento padrão do formulário (submissão)
+      event.preventDefault();
+
+      // Captura os valores dos inputs
+      var nome = document.getElementById("nome").value;
+      var email = document.getElementById("nome").value;
+      var telefone = document.getElementById("nome").value;
+
+      // Exibe as informações no resultado
+      var resultado = document.getElementById("resultado");
+      resultado.innerHTML = "Código: " + nome + "<br>" + "Tipo: " + email + "<br>" + "Descrição: " + telefone;
+    }
+  });
+});
+
+
+
+var input = document.getElementById("minhadiv");
+
+input.addEventListener("focus", function() {
+  input.style.border = "none";
+});
+
+
+
+
+
+function openDiv() {
+  var div = document.getElementById("minha-div");
+  div.style.display = "block";
+}
+          </script>
+    </body>
+</html>
