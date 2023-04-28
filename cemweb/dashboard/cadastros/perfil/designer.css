@@ -1,197 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/*Sidebar*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-body{
-    background-color: #dcdcdc;
-}
 *{
-  margin:0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'outfit', sans-serif;
 }
 
-.sidebar{position: absolute;
-  margin: 0;
-  height: 100% ;
+body{
+  height: 100vh;
+}
+
+.menu-lateral{
+  width: 50px;
+  height: 100%;
   background-color: white;
+  box-shadow: 3px 0 0 rgb(35,107,142);
   
-}
-
-.navigation{
-  position: relative;
-  height: 100%;
-  width: 70px;
-  background: white;
-  box-shadow: 5px 0 0 #4682B4;
-  border-left: 10px solid white;
-  overflow-x: hidden;
-  transition: 1.0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.navigation:hover{
-  width:300px;
-  height: 100%;
-}
-
-.navigation ul{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding-left: 5px;
-  padding-top: 40px;
-  
+  overflow: hidden;
+  transition: .2s;
 }
 
-.navigation ul li{
-  position: relative;
-  list-style: none;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
 
-.navigation ul li a{
-  position: relative;
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-  color: #4682B4;
+.menu-lateral:hover{
+  width: 300px;
 }
-.navigation ul li a:hover{
-  position: relative;
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  background-color: #4682B4;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.navigation ul li a .icon{
-  position: relative;
-  display: block;
-  min-width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 70px;
-}
-
-.navigation ul li a .icon ion-ion{
-  position: relative;
-  font-size: 1.5rem;
-  z-index: 1;
+.btn-expandir{
   width: 50px;
-  padding: 50px;
-  height: 50px;
-}
-
-.navigation ul li a .title{
-  position: relative;
-  display: block;
   padding-left: 10px;
-  height: 60px;
-  line-height: 60px;
-  white-space: nowrap;
-
 }
 
-
-.info-usuário img{
-  width: 15%;
-  margin-top: 20%;
-  margin-left: 10%;
+.btn-expandir > i{
+  color: rgb(35,107,142);
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.info-usuário p{
-  display: inline-block;
-  position: relative;
-  top: -9px;
-  left: 3%;
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu{
+  transition: .3s;
+}
+
+ul li.item-menu:hover{
+  background: rgb(35,107,142);
+}
+
+ul li.item-menu a{
+  color: rgb(35,107,142);
+  text-decoration: none;
   font-size: 15px;
-  color: #0d6efd;
-  
+  padding: 20px 4%;
+  display: flex;
+  line-height: 20px;
 }
+
+ul li.item-menu a:hover{
+  color: white;
+}
+
+ul li.item-menu a .txt-link{
+margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+
+/*Fim do Sidebar*/
+
+.caixa-line{
+  position: absolute;
+  border-bottom: 3px solid rgb(35,107,142);
+  padding: 10vh 70vh;
+  border-radius: 2px;
+  left: 30vh;
+
+
+}
+
+.caixa-line button{
+  position: absolute;
+  left: 100vh;
+  padding: 3vh 15vh;
+  background-color: rgb(35, 122, 165);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.caixa-line button:hover{
+  background-color: rgb(42, 97, 124);
+  padding: 24px 125px;
+  left: 99vh;
+  box-shadow: 0px 1px 10px rgba(red, green, blue, 0.5);
+}
+
+.Perfis{
+  position: relative;
+  top: -10px;
+  right: 60vh;
+  font-size: 45px;
+  color: #6b6969;
+}
+
+.caminho{
+  position: absolute;
+  font-size: 15px;
+  right: 122vh;
+  color: #a09f9f
+}
+
+
+
+
+
 
 /**/
 
-#minhaDiv {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 35%;
-    height: 70%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 0px solid #000;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  }
+table tr:not(:first-child) {
+  display: none;
+}
 
 
-  #minhaDiv button {
-    position: absolute;
-    top: 5%;
-    left: 95%;
-    width: 7%;
-    height: 7%;
-    transform: translate(-50%, -50%);
-    background-color: #4682B4;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-
- form{
-    display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  }
-
-  form input{
-    width: 100%;
-    height: 40%;
-    padding: 3%;
-    background-color: #dcdcdc;
-    border: 0px solid ;
-    border-radius: 7px;
-    margin-bottom: 15%;
-  }
-
-input:hover{
-    border: none;
-  }
 
 
-  .botão-perso{
-    position: absolute;
-    background-color: #4CAF50;
+.tabela-vid{
+  position: absolute;
+  top: 45vh;
+  left: 25vh;
+  padding: 20vh 35vh;
+  background-color: #6b6969;
+}
+
+.Filtro-caixa {
+  position: absolute;
+  padding: 3vh 10vh;
+  left: 130vh;
+  top: 32vh;
+  border-radius: 4px;
   border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  }
-  button:hover {
-    background-color: #3e8e41;
-  }
-  
-  #minha-div {
-    display: none;
-  }
+  background-color: rgb(212, 212, 212);
+}
