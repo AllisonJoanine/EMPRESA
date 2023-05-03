@@ -7,54 +7,66 @@
 
     <body>
         
-        <div class="links-box" id="linkDiv">Perfis</div>
+        <a href="../cadastros/perfil/index.abertura.html"><div class="links-box" id="linkDiv">Perfis</div></a>
         <div class="links-box1" id="linkDiv1"> Vidros</div>
         <div class="links-box2" id="linkDiv2">Tratamento/Cores</div>
         
+<div class="linha-separa">
+  
+  <div id="slideshow">
+    <img src="./esquadria.png" />
+    <img src="img2.jpg" />
+    <img src="img3.jpg" />
+  </div>
 
+</div><!--linha-separa-->
 
-<div class="sidebar">
-    <div class="navigation">
-      <ul>
-        <li class="list">
-            <a href="#">
-              <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-              <span class="title">Ola Juliano</span>
-            </a>
-          </li><!--list-->
-        
+<!--Sidebar-->
+<nav class="menu-lateral">
+  <div class="btn-expandir">
+    <i class="bi bi-list"></i>
+  </div><!--btn-expandir-->
 
-          <li class="list">
-              <a href="#">
-                <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
-                <span class="title">Dashboard</span>
-              </a>
-          </li><!--list-->
-          <li class="list">
-            <a href="#">
-              <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
-              <span class="title">Cadastro</span>
-          
-            </a>
-           </li><!--list-->
-          <li class="list">
-          <a href="#">
-            <span class="icon"><ion-icon name="pencil-outline"></ion-icon></span>
-            <span class="title">Projetos</span>
-          </a>
-          </li><!--list-->
-          <li class="list">
-            <a href="#">
-              <span class="icon"><ion-icon name="images-outline"></ion-icon></span>
-              <span class="title">Desenhos/croquis</span>
-           
-            </a>
-          </li><!--list-->
-          </ul>
-
-          
-    </div><!--navigation-->
-  </div><!--sidebar-->
+  <ul>
+    <li class="item-menu">
+      <a href="/dashboard/index.abertura.html">
+        <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+        <span class="txt-link">Dahsboard</span>
+      </a>
+    </li><!--item-menu-->
+    <li class="item-menu">
+      <a href="#">
+        <span class="icon"><i class="bi bi-list-task"></i></span>
+        <span class="txt-link">Cadastro</span>
+      </a>
+    </li><!--item-menu-->
+    <li class="item-menu">
+      <a href="#">
+        <span class="icon"><i class="bi bi-pencil-square"></i></span>
+        <span class="txt-link">Projetos</span>
+      </a>
+    </li><!--item-menu-->
+    <li class="item-menu">
+      <a href="#">
+        <span class="icon"><i class="bi bi-images"></i></span>
+        <span class="txt-link">Desenhos/Croquis</span>
+      </a>
+    </li><!--item-menu-->
+    <li class="item-menu">
+      <a href="#">
+        <span class="icon"><i class="bi bi-piggy-bank-fill"></i></span>
+        <span class="txt-link">Orcamento</span>
+      </a>
+    </li><!--item-menu-->
+    <li class="item-menu">
+      <a href="#">
+        <span class="icon"><i class="bi bi-calendar-check-fill"></i></span>
+        <span class="txt-link">Revisar Pedidos</span>
+      </a>
+    </li><!--item-menu-->
+  </ul>
+</nav><!--menu-lateral-->
+<!--Fim do sidebar-->
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -62,7 +74,7 @@
 <script>
     const linkDiv = document.getElementById('linkDiv');
 linkDiv.addEventListener('click', () => {
-  window.location.href = "https://www.exemplo.com";
+  window.location.href = "../dashboard/cadastros/perfil/index.html";
 });
 //////////////////////
 const linkDiv1 = document.getElementById('linkDiv1');
@@ -88,6 +100,22 @@ const interval = setInterval(() => {
   slides.forEach(slide => slide.style.display = 'none');
   slides[currentSlide].style.display = 'block';
 }, 3000);
+
+
+
+/////////////////////
+
+$(function() {
+  var images = $('#slideshow img');
+  var index = 0;
+  images.eq(index).addClass('active');
+
+  setInterval(function() {
+    images.eq(index).removeClass('active');
+    index = (index + 1) % images.length;
+    images.eq(index).addClass('active');
+  }, 3000);
+});
 </script>
 
 </body>

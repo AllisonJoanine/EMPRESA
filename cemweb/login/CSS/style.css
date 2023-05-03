@@ -76,7 +76,7 @@ input[type="password"] {
 
 .button-enviar{
   position: relative;
-  top: -60px;
+  top: -250px;
   background-color: rgb(35,107,142); /* cor de fundo */
   border: none; /* remover borda */
   color: white; /* cor do texto */
@@ -198,11 +198,11 @@ button:hover {
   
   .button-enviar{
     position: center;
-    top: -60px;
+    top: -90px;
     background-color: rgb(35,107,142); /* cor de fundo */
     border: none; /* remover borda */
     color: white; /* cor do texto */
-    padding: 13% 117%; /* espaçamento interno */
+    padding: 13% 116%; /* espaçamento interno */
     text-align: center; /* alinhamento do texto */
     text-decoration: none; /* remover sublinhado */
     display: inline-block; /* exibir como bloco */

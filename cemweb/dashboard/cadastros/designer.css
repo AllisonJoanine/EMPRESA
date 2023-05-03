@@ -1,124 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/*Sidebar*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-body{
-    background-image: url(../imagens/cem-cadastro.jpg);
-
-        background-size: cover;
-        background-repeat: no-repeat;
-}
 *{
-  margin:0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'outfit', sans-serif;
 }
 
-.sidebar{position: absolute;
-  margin: 0;
-  height: 100% ;
-  background-color: white;
-  
-}
-
-.navigation{
-  position: relative;
-  height: 100%;
-  width: 70px;
-  background: white;
-  box-shadow: 5px 0 0 #4682B4;
-  border-left: 10px solid white;
+body{
+  height: 100vh;
+  overflow-y: hidden;
   overflow-x: hidden;
-  transition: 1.0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.navigation:hover{
-  width:300px;
+.menu-lateral{
+  width: 50px;
   height: 100%;
-}
-
-.navigation ul{
-  position: absolute;
+  background-color: white;
+  box-shadow: 3px 0 0 rgb(35,107,142);
+  
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding-left: 5px;
-  padding-top: 40px;
-  
+  overflow: hidden;
+  transition: .2s;
 }
 
-.navigation ul li{
-  position: relative;
-  list-style: none;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
 
-.navigation ul li a{
-  position: relative;
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-  color: #4682B4;
+.menu-lateral:hover{
+  width: 300px;
 }
-.navigation ul li a:hover{
-  position: relative;
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  background-color: #4682B4;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.navigation ul li a .icon{
-  position: relative;
-  display: block;
-  min-width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 70px;
-}
-
-.navigation ul li a .icon ion-ion{
-  position: relative;
-  font-size: 1.5rem;
-  z-index: 1;
+.btn-expandir{
   width: 50px;
-  padding: 50px;
-  height: 50px;
-}
-
-.navigation ul li a .title{
-  position: relative;
-  display: block;
   padding-left: 10px;
-  height: 60px;
-  line-height: 60px;
-  white-space: nowrap;
-
 }
 
-
-.info-usuário img{
-  width: 15%;
-  margin-top: 20%;
-  margin-left: 10%;
+.btn-expandir > i{
+  color: rgb(35,107,142);
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.info-usuário p{
-  display: inline-block;
-  position: relative;
-  top: -9px;
-  left: 3%;
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu{
+  transition: .3s;
+}
+
+ul li.item-menu:hover{
+  background: rgb(35,107,142);
+}
+
+ul li.item-menu a{
+  color: rgb(35,107,142);
+  text-decoration: none;
   font-size: 15px;
-  color: #0d6efd;
-  
+  padding: 20px 4%;
+  display: flex;
+  line-height: 20px;
 }
+
+ul li.item-menu a:hover{
+  color: white;
+}
+
+ul li.item-menu a .txt-link{
+margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+
+/*Fim do Sidebar*/
 
 
 
@@ -128,6 +88,7 @@ body{
     top: 15%;
     left: 15%;
     background-color: #4682B4;
+    
     height: 12%;
     width: 23%;
     border-radius: 15px;
@@ -188,3 +149,29 @@ body{
 
 
 /**/
+.linha-separa{
+  position: absolute;
+  top: 70%;
+  border-radius: 8px;
+  padding: 2px 100%;
+  background-color: #3a6c94;
+
+}
+
+
+
+#slideshow {
+  position: absolute;
+}
+
+#slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+  opacity: 1;
+}
