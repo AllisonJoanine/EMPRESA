@@ -127,9 +127,7 @@ ul li.item-menu a .icon > i{
 
 /**/
 
-table tr:not(:first-child) {
-  display: none;
-}
+
 
 
 
@@ -138,7 +136,7 @@ table tr:not(:first-child) {
   position: absolute;
   top: 45vh;
   left: 25vh;
-  padding: 20vh 35vh;
+  padding: 15vh 35vh;
   background-color: #6b6969;
 }
 
@@ -150,4 +148,121 @@ table tr:not(:first-child) {
   border-radius: 4px;
   border: none;
   background-color: rgb(212, 212, 212);
+}
+
+
+/**/
+
+
+#minhaDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente para destacar a div */
+  display: none; /* inicia escondida */
+}
+
+#minhaDiv a#fecharDiv {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: black;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+
+
+.box-branca{
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%; /* ajuste a largura conforme necessário */
+  height: 100%; /* cobre toda a altura da tela */
+  z-index: 9999; /* define a ordem de empilhamento da div */
+}
+
+
+/**/
+
+
+table{
+  position: absolute;
+  border-radius: collapse;
+  border-spacing: 0;
+  width: 70%;
+  top: 45vh;
+  left: 29vh;
+}
+
+th,td{
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+th{
+  background-color: #3394D5;
+  color: white;
+}
+
+
+.box-branca input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+  margin-left: 10vh;
+  margin-top: 3vh;
+}
+input:focus 		{ outline:none; }
+
+.box-branca h2{
+  position: absolute;
+  left: 5vh;
+}
+
+
+
+label {
+  
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 10vh;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3394D5;
+  box-shadow: 0 0 5px rgba(51, 148, 213, 0.5);
+}
+
+
+input[type="button"]{
+    background-color:#3394D5;
+    color: white;
+    border-radius: 8px;
+}
+
+input[type="button"]:hover{
+  background-color: #27628a;
 }
